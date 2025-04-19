@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🚦 Semáforo Inteligente 🚦</h1>
+    </header>
+
+    <main class="container">
+        <div class="traffic-light">
+            <img src="./img/desligado.png" id="img" class="semaforo">
+        </div>
+
+        <!-- 📝 Área de explicação do semáforo -->
+        <div id="infoBox" class="info-box">
+            <p><strong>Para Motoristas:</strong> 🚗</p>
+            <p id="driverInfo">Clique em uma cor para ver seu significado!</p>
+            <hr>
+            <p><strong>Para Pedestres:</strong> 🚶</p>
+            <p id="pedestrianInfo">Clique em uma cor para ver seu significado!</p>
+        </div>
+
+        <div id="buttons" class="botoes">
+            <button id="start" class="btn start">Iniciar</button>
+            <button id="red" class="btn red">🔴 Vermelho</button>
+            <button id="yellow" class="btn yellow">🟡 Amarelo</button>
+            <button id="green" class="btn green">🟢 Verde</button>
+            <button id="automatic" class="btn automatic">🚥 Automático</button>
+        </div>
+    </main>
+
+    <script src="semaforo.js"></script>
+</body>
+</html>
